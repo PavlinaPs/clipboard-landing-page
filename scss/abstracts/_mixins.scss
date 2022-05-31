@@ -1,0 +1,27 @@
+@use './breakpoints' as *;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button-mobile {
+    width: 100%;
+    max-width: 50rem;
+    padding: 1.65rem 0 1.35rem;
+    font-family: inherit;
+    font-size: var(--fs-button-mobile);
+    font-weight: var(--fw-semiBold);
+    color: var(--clr-white);
+    letter-spacing: 0.1rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+
+    @media (min-width: $desktop) {
+        max-width: 22.8rem;
+        font-size: var(--fs-button-desktop);
+        font-weight: var(--fw-regular);
+    }
+}
