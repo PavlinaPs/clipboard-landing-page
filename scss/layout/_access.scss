@@ -1,1 +1,46 @@
 @use '../abstracts/' as *;
+
+.landing__access {
+    margin-top: 18.7rem;
+    text-align: center;
+
+    @media (min-width: $desktop) {
+        margin-top: 15rem;
+
+    }
+}
+
+.access__title {
+    padding: 0 3rem 0;
+    font-size: var(--fs-h2-mobile);
+    font-weight: var(--fw-semiBold);
+    color: var(--clr-dark-grayish-blue);
+    line-height: 1.2;
+
+    @media (min-width: $desktop) {
+        font-size: var(--fs-h2-desktop);
+    }
+}
+
+.access__title-text {
+    padding: 0 3rem 0;
+    margin-top: 1.7rem;
+    line-height: 1.65;
+
+    @media (min-width: $desktop) {
+        margin-top: 2rem;
+        padding: 0 36rem;
+        font-size: var(--fs-small-desktop);
+        line-height: 1.7;
+    }
+}
+
+.access__image {
+    max-width: 100%;
+    margin-top: 6rem;
+    padding: 0 1.4rem 0;
+
+    @media (min-width: $desktop) {
+        margin: 9.8rem auto 0;
+    }
+}
