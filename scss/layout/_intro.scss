@@ -36,7 +36,7 @@
     line-height: 1.6;
 
     @media (min-width: $desktop) {
-        padding: 0 33rem;
+        padding: 0 34rem;
         line-height: 1.4;
     }
 }
@@ -63,6 +63,7 @@
 
     @media (min-width: $desktop) {
         margin-top: 0;
+        filter: drop-shadow(0rem 0.5rem 0 darken(hsl(171, 66%, 44%), 8%));
     }
 }
 
@@ -80,5 +81,6 @@
 
     @media (min-width: $desktop) {
         margin-top: 0;
+        filter: drop-shadow(0rem 0.5rem 0 darken(hsl(233, 100%, 69%), 8%));
     }
 }
