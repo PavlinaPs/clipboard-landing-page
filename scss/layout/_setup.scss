@@ -11,13 +11,12 @@ body {
 
     @media (min-width: $desktop) {
         font-size: var(--fs-normal-desktop);
+        background-color: var(--clr-grayish-blue-l98);
     }
 }
 
 .landing__container {
     //width: 37.5rem;
-
-    border: 1px solid orange;
 
     @media (min-width: $desktop) {
         max-width: 144rem;

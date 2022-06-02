@@ -1,13 +1,12 @@
 @use '../abstracts/' as *;
 
 .landing__keep {
-    margin-top: 16.4rem;
-    padding: 0 3rem 0;
+    padding: 16.4rem 3rem 0;
     text-align: center;
+    background-color: var(--clr-white);
 
     @media (min-width: $desktop) {
-        margin-top: 15.5rem;
-        padding: 0;
+        padding: 15.5rem 0 0;
     }
 }
 

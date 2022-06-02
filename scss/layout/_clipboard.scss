@@ -1,15 +1,12 @@
 @use '../abstracts/' as *;
 
 .landing__clipboard {
-    margin-top: 16.8rem;
-    padding: 0 3.3rem 17.2rem;
+    padding: 16.8rem 3.3rem 17.2rem;
     text-align: center;
-
-    border: 1px solid red;
+    background-color: var(--clr-white);
 
     @media (min-width: $desktop) {
-        margin-top: 15.5rem;
-        padding: 0 3.3rem 15.2rem;
+        padding: 15.5rem 3.3rem 15.2rem;
     }
 }
 

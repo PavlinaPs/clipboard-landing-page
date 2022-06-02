@@ -1,11 +1,11 @@
 @use '../abstracts/' as *;
 
 .landing__logos {
-    margin-top: 13rem;
+    padding-top: 13rem;
+    background-color: var(--clr-white);
 
     @media (min-width: $desktop) {
-        margin-top: 16rem;
-        padding: 0 15rem 0 16.5rem;
+        padding: 16rem 15rem 0 16.5rem;
         display: grid;
         grid-template-columns: 15% 13% 14% 12.5% 11%;
         align-items: center;
