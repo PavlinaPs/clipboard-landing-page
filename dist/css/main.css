@@ -362,7 +362,7 @@ body {
 }
 @media (min-width: 65em) {
   .landing__supercharge {
-    margin-top: 7.2rem 3rem 0;
+    padding: 7.2rem 3rem 0;
   }
 }
 
@@ -489,8 +489,8 @@ body {
 .logo--microsoft,
 .logo--HP,
 .logo--vector {
-    margin-left: none;
-    margin-right: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
