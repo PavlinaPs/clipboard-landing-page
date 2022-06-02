@@ -1,6 +1,91 @@
 @use '../abstracts/' as *;
 
+.landing__footer {
+    padding: 0 0 4.5rem;
+    text-align: center;
+    background-color: var(--clr-grayish-blue-a);
 
-// .share-button.active > svg > path {
-//     fill: var(--clr-light-grayish-blue);
-// }
+    border: 1px solid red;
+
+    @media (min-width: $desktop) {
+        padding: 4rem 12.9rem 4rem 16rem;
+        display: grid;
+        grid-template-columns: 16.8% 16.4% 16.8% 36.7% 13.3%;
+        text-align: left;
+    }
+}
+
+.footer__logo {
+    width: 15%;
+    max-width: 10rem;
+    margin: 5rem auto 0;
+
+    @media (min-width: $desktop) {
+        width: 30%;
+        max-width: 50%;
+        margin: 0;
+    }
+}
+
+// first column of links <ul>
+.footer__links:first-of-type {
+    margin-top: 4.4rem;
+
+    @media (min-width: $desktop) {
+        margin: 0;
+    }
+}
+
+// else columns of links <ul>
+.footer__links:not(:first-of-type) {
+   margin-top: 2.7rem;
+
+   @media (min-width: $desktop) {
+    margin: 0;
+    }
+}
+
+// individual link <li>
+.footer__link:first-child {
+    margin-bottom: 2.7rem;
+
+    @media (min-width: $desktop) {
+        margin-bottom: 1.4rem;
+    }
+}
+
+.footer__link:only-child {
+    margin-bottom: 0;
+}
+
+.footer__link > a {
+    color: var(--clr-dark-grayish-blue);
+    font-size: var(--fs-button-mobile);
+
+    &:hover {
+        color: var(--clr-strong-cyan);
+    }
+
+    @media (min-width: $desktop) {
+        font-size: var(--fs-button-desktop);
+    }
+}
+
+.footer__socials {
+    @include flex-center;
+    gap: 4rem;
+    
+    margin-top: 5.1rem;
+
+    @media (min-width: $desktop) {
+        justify-content: space-between;
+        gap: 2.3rem;
+        margin: 1rem;
+        width: fit-content;
+    }
+}
+
+.footer__social:hover a > svg > path,
+.footer__social:focus a > svg > path {
+    fill: var(--clr-strong-cyan);
+}
