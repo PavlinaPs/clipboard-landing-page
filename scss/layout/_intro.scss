@@ -4,14 +4,14 @@
     padding: 12.2rem 3.3rem 0;
     text-align: center;
     background-color: var(--clr-white);
-    background-image: url(/images/bg-header-mobile.png);
+    background-image: url(../../images/bg-header-mobile.png);
     background-position: center top;
     background-size: 100% 30rem;
     background-repeat: no-repeat;
 
     @media (min-width: $desktop) {
         padding: 12.7rem 0 0;
-        background-image: url(/images/bg-header-desktop.png);
+        background-image: url(../../images/bg-header-desktop.png);
     }
 }
 

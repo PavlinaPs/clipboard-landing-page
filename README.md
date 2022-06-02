@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/PavlinaPs/clipboard-landing-page/settings/pages
+- Solution URL: https://github.com/PavlinaPs/clipboard-landing-page
 - Live Site URL: https://pavlinaps.github.io/clipboard-landing-page/
 
 ## My process
