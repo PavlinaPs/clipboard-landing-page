@@ -1,0 +1,63 @@
+@use '../abstracts/' as *;
+
+.landing__logos {
+    margin-top: 13rem;
+
+    @media (min-width: $desktop) {
+        margin-top: 16rem;
+        padding: 0 15rem 0 16.5rem;
+        display: grid;
+        grid-template-columns: 15% 13% 14% 12.5% 11%;
+        align-items: center;
+        gap: 9.5rem;
+    }
+}
+
+.logo--google,
+.logo--IBM,
+.logo--microsoft,
+.logo--HP,
+.logo--vector {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $desktop) {
+        margin-left: none;
+        margin-right: none;
+    }
+}
+
+.logo--google {
+    width: 39%;
+}
+
+.logo--IBM {
+    margin-top: 6.3rem;
+    width: 32%;
+}
+
+.logo--microsoft {
+    margin-top: 7rem;
+    width: 35%;
+}
+
+.logo--HP {
+    margin-top: 6.2rem;
+    width: 31%;
+}
+
+.logo--vector {
+    margin-top: 5.6rem;
+    width: 28%;
+    }
+
+.logo--google,
+.logo--IBM,
+.logo--microsoft,
+.logo--HP,
+.logo--vector {
+    @media (min-width: $desktop) {
+        margin-top: 0;
+        width: 100%;
+    }
+}

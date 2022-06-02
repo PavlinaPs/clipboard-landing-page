@@ -1,1 +1,80 @@
 @use '../abstracts/' as *;
+
+.landing__clipboard {
+    margin-top: 16.8rem;
+    padding: 0 3.3rem 17.2rem;
+    text-align: center;
+
+    border: 1px solid red;
+
+    @media (min-width: $desktop) {
+        margin-top: 15.5rem;
+        padding: 0 3.3rem 15.2rem;
+    }
+}
+
+.clipboard__title {
+    font-size: var(--fs-h2-mobile);
+    font-weight: var(--fw-semiBold);
+    color: var(--clr-dark-grayish-blue);
+    line-height: 1.3;
+
+    @media (min-width: $desktop) {
+        font-size: var(--fs-h2-desktop);
+    }
+}
+
+.clipboard__text {
+    margin-top: 1.5rem;
+    line-height: 1.6;
+
+    @media (min-width: $desktop) {
+        margin-top: 1.8rem;
+        padding: 0 30rem;
+        line-height: 1.4;
+    }
+}
+
+.clipboard__button-container {
+    @media (min-width: $desktop) {
+        @include flex-center;
+        gap: 1.5rem;
+        margin-top: 5rem;
+    }
+}
+
+.clipboard__button--cyan {
+    @include button-mobile;
+
+    margin-top: 4.6rem;
+    background-color: var(--clr-strong-cyan);
+    filter: drop-shadow(0rem 0.3rem 0 darken(hsl(171, 66%, 44%), 8%));
+    box-shadow: 0 0.5rem 1.5rem var(--clr-strong-cyan-bs);
+
+    &:hover {
+        background-color: var(--clr-strong-cyan-hover);
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 0;
+        filter: drop-shadow(0rem 0.5rem 0 darken(hsl(171, 66%, 44%), 8%));
+    }
+}
+
+.clipboard__button--blue {
+    @include button-mobile;
+
+    margin-top: 2.7rem;
+    background-color: var(--clr-light-blue);
+    filter: drop-shadow(0rem 0.3rem 0 darken(hsl(233, 100%, 69%), 8%));
+    box-shadow: 0 0.5rem 1.5rem var(--clr-light-blue-bs);
+
+    &:hover {
+        background-color: var(--clr-light-blue-hover);
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 0;
+        filter: drop-shadow(0rem 0.5rem 0 darken(hsl(233, 100%, 69%), 8%));
+    }
+}
